@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Lab | Portfolio</title>
+    <style>
+        /* Base Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: #fafafa; 
+            color: #171717; 
+            line-height: 1.6;
+            padding: 50px 20px;
+        }
+        
+        /* Header / Title Area */
+        header { 
+            max-width: 900px; 
+            margin: 0 auto 50px; 
+        }
+        h1 { 
+            font-size: 2.2rem; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            letter-spacing: -0.5px;
+        }
+        p.subtitle { 
+            color: #666; 
+            font-size: 1.1rem; 
+        }
+
+        /* Grid Setup */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 24px; 
+            max-width: 900px; 
+            margin: 0 auto; 
+        }
+
+        /* Minimalist Card Design */
+        .card { 
+            background: #fff; 
+            border: 1px solid #eaeaea; 
+            border-radius: 8px; 
+            padding: 24px; 
+            transition: all 0.2s ease;
+        }
+        .card:hover { 
+            border-color: #ccc; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+        }
+        
+        .card-number { 
+            font-size: 0.85rem; 
+            color: #888; 
+            margin-bottom: 12px; 
+            display: block; 
+            font-weight: 500;
+        }
+        .card h2 { 
+            font-size: 1.25rem; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+        }
+        .card p { 
+            font-size: 0.95rem; 
+            color: #555; 
+            margin-bottom: 24px; 
+        }
+        
+        /* Solid Black Button */
+        .card a { 
+            display: inline-block; 
+            padding: 8px 16px; 
+            background: #171717; 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-size: 0.9rem; 
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .card a:hover { 
+            background: #333; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mini Projects</h1>
+        <p class="subtitle">A collection of HTML, CSS, and JavaScript projects</p>
+    </header>
+    
+    <div class="grid">
+        
+        <!-- Project 1 -->
+        <div class="card">
+            <span class="card-number">01</span>
+            <h2>Calculator</h2>
+            <p>A simple and clean calculator to handle basic math operations.</p>
+            <a href="./01-calculator/index.html">View Project</a>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="card">
+            <span class="card-number">02</span>
+            <h2>Weather App</h2>
+            <p>Real-time weather tracking using fetch API and async/await.</p>
+            <a href="./02-weather-app/index.html">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+            <span class="card-number">03</span>
+            <h2>To-Do List</h2>
+            <p>Task management app using localStorage to save data locally.</p>
+            <a href="./03-todo-app/index.html">View Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card">
+            <span class="card-number">04</span>
+            <h2>Password Generator</h2>
+            <p>Cyberpunk style random secure password creator.</p>
+            <a href="./04-password-generator/index.html">View Project</a>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="card">
+            <span class="card-number">05</span>
+            <h2>QR Generator</h2>
+            <p>Instant QR code creator from any text or link.</p>
+            <a href="./05-qr-generator/index.html">View Project</a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="card">
+            <span class="card-number">06</span>
+            <h2>Expense Tracker</h2>
+            <p>Mini dashboard to track your daily income and expenses.</p>
+            <a href="./06-mini-expense-tracker/index.html">View Project</a>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="card">
+            <span class="card-number">07</span>
+            <h2>GitHub Finder</h2>
+            <p>Search any GitHub user with a cool 3D flip card UI.</p>
+            <a href="./07-github-profile-finder/index.html">View Project</a>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="card">
+            <span class="card-number">08</span>
+            <h2>Tech Flashcards</h2>
+            <p>Neo-Brutalist UI with bold colors and thick borders.</p>
+            <a href="./08-flashcard-app/index.html">View Project</a>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="card">
+            <span class="card-number">09</span>
+            <h2>Pomodoro Timer</h2>
+            <p>Claymorphism 3D puffy UI for focus and productivity.</p>
+            <a href="./09-pomodoro-timer/index.html">View Project</a>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="card">
+            <span class="card-number">10</span>
+            <h2>Bento Dashboard</h2>
+            <p>Apple-style bento box grid for personal links and stats.</p>
+            <a href="./10-bento-dashboard/index.html">View Project</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

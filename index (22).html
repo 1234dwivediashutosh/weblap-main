@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claymorphism Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-btn">⬅ Back</a>
+    
+    <div class="clay-card">
+        <h2>Focus Timer</h2>
+        
+        <div class="timer-display" id="time">
+            25:00
+        </div>
+        
+        <div class="controls">
+            <button class="clay-btn" onclick="startTimer()">Start</button>
+            <button class="clay-btn" onclick="pauseTimer()">Pause</button>
+            <button class="clay-btn reset" onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

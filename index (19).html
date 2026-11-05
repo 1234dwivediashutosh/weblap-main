@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo-Brutalist Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-btn">⬅ Back</a>
+    
+    <div class="container">
+        <h1 class="title">Tech Trivia</h1>
+        
+        <div class="flashcard" id="flashcard" onclick="flipCard()">
+            <div class="card-content" id="card-content">
+                <h3 id="question">What does HTML stand for?</h3>
+                <p id="answer" class="hidden">HyperText Markup Language</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="brutal-btn" onclick="prevCard()">Prev</button>
+            <span id="counter" class="counter">1 / 5</span>
+            <button class="brutal-btn" onclick="nextCard()">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

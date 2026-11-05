@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #e0e5ec; /* Soft grayish-white base */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #31344b;
+}
+
+/* Back Button - Outset Neumorphism */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #31344b;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+}
+
+/* Main Card - Outset Neumorphism */
+.weather-card {
+    background-color: #e0e5ec;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), 
+               -9px -9px 16px rgba(255,255,255, 0.5);
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Input Field - Inset Neumorphism (Andar daba hua) */
+.search-box input {
+    width: 65%;
+    border: none;
+    outline: none;
+    background-color: #e0e5ec;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #31344b;
+    box-shadow: inset 4px 4px 6px #a3b1c6, 
+                inset -4px -4px 6px #ffffff;
+}
+
+/* Search Button - Outset Neumorphism */
+.search-box button {
+    width: 30%;
+    border: none;
+    outline: none;
+    background-color: #e0e5ec;
+    font-weight: bold;
+    color: #31344b;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px #a3b1c6, 
+               -4px -4px 6px #ffffff;
+    transition: 0.2s;
+}
+
+.search-box button:active {
+    box-shadow: inset 4px 4px 6px #a3b1c6, 
+                inset -4px -4px 6px #ffffff;
+}
+
+.error {
+    color: #ff4757;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: none; /* Hidden by default */
+}
+
+.weather-info {
+    display: none; /* Will show via JS when data arrives */
+}
+
+.weather-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.temp {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(163,177,198,0.5);
+}
+
+#description {
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Details Section - Inner Cards */
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #e0e5ec;
+    box-shadow: inset 4px 4px 6px #a3b1c6, 
+                inset -4px -4px 6px #ffffff;
+}
+
+.col p {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #888;
+}
+
+.col span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}

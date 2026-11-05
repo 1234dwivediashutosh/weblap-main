@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e8eaf6; /* Soft pastel lavender/blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #5c6bc0;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 12px;
+    /* Clay effect for back button */
+    background-color: #e8eaf6;
+    box-shadow: 5px 5px 10px #c5c6d0, 
+               -5px -5px 10px #ffffff,
+               inset 2px 2px 5px #ffffff,
+               inset -3px -3px 5px #c5c6d0;
+    transition: 0.2s;
+}
+
+.back-btn:active {
+    box-shadow: inset 5px 5px 10px #c5c6d0, inset -5px -5px 10px #ffffff;
+}
+
+/* Claymorphism Main Card */
+.clay-card {
+    background-color: #e8eaf6;
+    width: 320px;
+    padding: 40px;
+    border-radius: 40px; /* Big radius for soft look */
+    text-align: center;
+    
+    /* Drop shadow + Inset shadow = Clay effect */
+    box-shadow: 15px 15px 30px #c5c6d0, 
+               -15px -15px 30px #ffffff,
+               inset 5px 5px 15px #ffffff,
+               inset -5px -5px 15px #c5c6d0;
+}
+
+h2 {
+    color: #5c6bc0;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Timer display looks pressed IN (Inset only) */
+.timer-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #3f51b5;
+    background-color: #e8eaf6;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    
+    /* Pressed inward */
+    box-shadow: inset 8px 8px 16px #c5c6d0, 
+                inset -8px -8px 16px #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Clay Buttons */
+.clay-btn {
+    background-color: #5c6bc0; /* Primary color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    
+    /* Colored clay effect */
+    box-shadow: 6px 6px 12px #c5c6d0, 
+               -6px -6px 12px #ffffff,
+               inset 2px 2px 8px rgba(255, 255, 255, 0.4),
+               inset -3px -3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clay-btn:active {
+    transform: scale(0.95);
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2), 
+                inset -4px -4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.clay-btn.reset {
+    background-color: #e57373; /* Red clay */
+}

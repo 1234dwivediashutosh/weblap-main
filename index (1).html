@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-btn">⬅ Back to Web Lab</a>
+    
+    <div class="weather-card">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+            <button onclick="checkWeather()">Search</button>
+        </div>
+        
+        <!-- Error Message Area -->
+        <div id="error-msg" class="error">City not found!</div>
+        
+        <!-- Weather Info Area (Hidden by default) -->
+        <div class="weather-info" id="weather-info">
+            <h2 id="city-name">Delhi</h2>
+            <div class="temp">
+                <span id="temperature">28</span>°C
+            </div>
+            <p id="description">Clear Sky</p>
+            
+            <div class="details">
+                <div class="col">
+                    <p>Humidity</p>
+                    <span id="humidity">45%</span>
+                </div>
+                <div class="col">
+                    <p>Wind</p>
+                    <span id="wind">5 km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

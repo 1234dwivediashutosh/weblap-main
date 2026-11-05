@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+body { background-color: #0d1117; color: #c9d1d9; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.back-btn { position: absolute; top: 20px; left: 20px; text-decoration: none; color: #c9d1d9; border: 1px solid #30363d; padding: 8px 15px; border-radius: 6px; }
+.back-btn:hover { background: #30363d; }
+
+/* 3D Flip Card Container */
+.scene { width: 340px; height: 450px; perspective: 1000px; }
+.card { width: 100%; height: 100%; position: relative; transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); transform-style: preserve-3d; }
+.card.is-flipped { transform: rotateY(180deg); }
+
+.card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 15px; background: #161b22; border: 1px solid #30363d; box-shadow: 0 8px 24px rgba(0,0,0,0.2); padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+/* Front Side */
+.logo { width: 80px; filter: invert(1); margin-bottom: 20px; }
+.card-front h2 { margin-bottom: 25px; color: #fff; font-weight: 500; }
+input { width: 100%; padding: 12px; margin-bottom: 15px; background: #0d1117; border: 1px solid #30363d; color: #fff; border-radius: 6px; outline: none; font-size: 1rem; text-align: center; }
+input:focus { border-color: #58a6ff; }
+button { width: 100%; padding: 12px; background: #238636; color: #fff; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; font-size: 1rem; }
+button:hover { background: #2ea043; }
+.error { color: #ff7b72; margin-top: 15px; font-size: 0.9rem; display: none; }
+
+/* Back Side */
+.card-back { transform: rotateY(180deg); justify-content: space-between; }
+.profile-header { display: flex; align-items: center; width: 100%; gap: 15px; }
+#avatar { width: 70px; height: 70px; border-radius: 50%; border: 2px solid #30363d; }
+.names h2 { font-size: 1.2rem; color: #fff; }
+.names a { color: #58a6ff; text-decoration: none; font-size: 0.9rem; }
+.names a:hover { text-decoration: underline; }
+
+#bio { font-size: 0.9rem; color: #8b949e; text-align: left; width: 100%; line-height: 1.4; }
+
+.stats { display: flex; justify-content: space-between; width: 100%; background: #0d1117; padding: 15px; border-radius: 10px; border: 1px solid #30363d; }
+.stat-box { text-align: center; }
+.stat-box span { font-weight: bold; color: #fff; font-size: 1.1rem; display: block; margin-bottom: 3px; }
+.stat-box p { font-size: 0.75rem; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; }
+
+.reset-btn { background: #30363d; margin-top: 20px; }
+.reset-btn:hover { background: #8b949e; color: #0d1117; }
